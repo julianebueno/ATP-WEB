@@ -1,0 +1,60 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* ------------------------------------------ Geral */
+body {
+  background-color: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* ------------------------------------------ Header */
+.cabecalho {
+  background-color: #054f77;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.cabecalho img {
+  filter: invert(0.9);
+}
+.navHeader {
+  display: flex;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.navHeader a {
+  color: #f0f0f0;
+  padding: 0.5rem;
+}
+.navHeader a:hover {
+  color: #c0c0c0;
+}
+/* ------------------------------------------ Main */
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem;
+  align-items: center;
+}
+/* ---------------------------- Main do Index e do About*/
+.prinicipalIndex,
+.prinicipalAbout {
+  gap: 1rem;
+  text-align: center;
+}
+.prinicipalIndex p,
+.prinicipalAbout p {
+  width: 50%;
+}
+/* ------------------------------------------ Footer */
+.rodape {
+  background-color: #054f77;
+  color: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+}
