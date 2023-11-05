@@ -1,0 +1,23 @@
+/* ---------------------------- Main do Index e do About*/
+.prinicipalIndex,
+.prinicipalAbout {
+  gap: 1rem;
+  text-align: justify;
+}
+.prinicipalIndex p,
+.prinicipalAbout p {
+  text-indent: 1rem;
+}
+/* ---------------------------- Detalhes do Index*/
+.prinicipalIndex p a{
+  color: #054f77;
+  font-weight: 700;
+}
+/* ---------------------------- Detalhes do About*/
+.prinicipalAbout ul {
+  padding-left: 2rem;
+  text-indent: 1rem;
+}
+.prinicipalAbout li {
+  list-style: circle;
+}
