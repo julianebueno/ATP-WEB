@@ -4,27 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/form.css">
-  <script type="module" src="../js/form.js" defer></script>
-  <title>Form</title>
+
+  <!-- JS -->
+  <script type="module" src="../js/controller/construirHeaderFooter.js" defer></script>
+  <script type="module" src="../js/controller/menuHeader.js" defer></script>
+  <script src="../js/controller/funcoesForm.js" defer></script>
+
+  <title>YC - Cadastro de Receita</title>
 </head>
 
 <body>
 
   <header id="header" class="cabecalho"></header>
 
-  <main class="prinicipalForm">
-    <h3>FORM</h3>
-    <form action="">
-      <label for="">Label</label>
-      <input type="text">
-      <label for="">Label</label>
-      <input type="text">
-      <label for="">Label</label>
-      <input type="text">
-      <label for="">Label</label>
-      <input type="text">
+  <main class="principalForm">
+    <h2 class="titulo">Cadastro de Receita</h2>
+    <form>
+
+      <h3 class="titulosForm">Informações</h3>
+      <fieldset class="fieldsetInformacoes">
+        <label for="tituloReceita">
+          Título da Receita
+          <input type="text" name="tituloReceita" placeholder="Digite aqui..." required>
+        </label>
+        <label for="autorReceita">
+          Autor da Receita
+          <input type="text" name="autorReceita" placeholder="Digite aqui..." required>
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldsetInformacoes">
+        <label for="tempoPreparo">
+          Tempo de Preparo
+          <small>em minutos</small>
+          <input type="number" name="tempoPreparo" placeholder="Digite aqui..." min="1" value="1" max="1440" required>
+        </label>
+        <label for="rendimento">
+          Rendimento
+          <small>em porções</small>
+          <input type="number" name="rendimento" placeholder="Digite aqui..." min="1" value="1" max="1000" required>
+        </label>
+      </fieldset>
+
+      <h3 class="titulosForm">Ingredientes</h3>
+      <fieldset class="fieldsetInteiro">
+        <label for="ingredientes" id='labelIngredientes'>
+          <input type="text" name="ingrediente1" id="ingrediente1" placeholder="Ingrediente 1..." required>
+        </label>
+        <button type="button" onclick="addInputIngredientes()">+</button>
+      </fieldset>
+
+      <h3 class="titulosForm">Modo de Fazer</h3>
+      <fieldset class="fieldsetInteiro">
+        <label for="modoFazer" id='labelModoFazer'>
+          <input type="text" name="passo1" id="passo1" placeholder="Passo 1..." required>
+        </label>
+        <button type="button" onclick="addInputModoFazer()">+</button>
+      </fieldset>
+
+      <fieldset class="fieldsetBotoes">
+        <button type="reset" class="botaoLimpar">Limpar</button>
+        <button type="submit" class="botaoSalvar">Salvar</button>
+      </fieldset>
     </form>
   </main>
 

@@ -1,4 +1,76 @@
-form{
+/* ---------------------------- Main do Form */
+.titulosForm {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.principalForm form > fieldset {
   display: flex;
+  padding: 0.5rem;
+  width: 100%;
+}
+.principalForm form > fieldset > label {
+  margin-top: 0.5rem;
+}
+.principalForm form > fieldset > label,
+.principalForm form > fieldset > label > input {
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  width: 100%;
+}
+.principalForm form > fieldset > button {
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+/* ---------------------------- fieldsetInformacoes */
+
+
+
+
+
+
+
+/* ---------------------------- fieldsetInteiro */
+.fieldsetInteiro {
   flex-direction: column;
+}
+.fieldsetInteiro > button {
+  background-color: #054f77;
+  color: #f0f0f0;
+  width: 2rem;
+  margin: 0.5rem auto;
+  border-radius: 50%;
+}
+.fieldsetInteiro > label > input {
+  margin: 0.5rem;
+}
+
+/* ---------------------------- fieldsetBotoes */
+.fieldsetBotoes {
+  justify-content: center;
+  gap: 40px;
+  margin: 2rem 0;
+}
+.fieldsetBotoes button {
+  padding: 0.3rem 1rem;
+  font-weight: 700;
+}
+.botaoLimpar {
+  background-color: #ee7777;
+}
+.botaoSalvar {
+  background-color: #99ee99;
+}
+
+/* ---------------------------- Mobile */
+
+@media (max-width: 768px) {
+  .principalForm form {
+    gap: 10px;
+  }
+  .fieldsetInformacoes {
+    flex-direction: column;
+  }
 }
