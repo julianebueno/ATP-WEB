@@ -3,21 +3,50 @@
 .prinicipalAbout {
   gap: 1rem;
   text-align: justify;
+  margin-bottom: 3rem;
 }
 .prinicipalIndex p,
 .prinicipalAbout p {
   text-indent: 1rem;
 }
 /* ---------------------------- Detalhes do Index*/
-.prinicipalIndex p a{
+.prinicipalIndex p > a{
   color: #054f77;
   font-weight: 700;
 }
+.prinicipalIndex .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .5rem 0;
+  height: 300px;
+  border-radius: 5px;
+  background-image: url("../img/bannerIndex.jpg");
+  background-color: #91daed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
 /* ---------------------------- Detalhes do About*/
-.prinicipalAbout ul {
-  padding-left: 2rem;
+.prinicipalAbout ol {
+  padding-left: 1rem;
   text-indent: 1rem;
 }
-.prinicipalAbout li {
-  list-style: circle;
+.prinicipalAbout li > h4 {
+  margin-top: .5rem;
+  line-height: 1.5rem;
+}
+.prinicipalAbout li > p {
+  padding-left: 1.5rem;
+}
+
+/* ---------------------------- Mobile */
+
+@media (max-width: 768px) {
+  .prinicipalIndex .titulo {
+    align-items: end;
+    justify-content: start;
+    height: 70px;
+    padding-left: 1rem;
+  }
 }
