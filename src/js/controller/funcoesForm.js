@@ -25,8 +25,6 @@ function addInputModoFazer() {
   input2.setAttribute("name", `passoModoFazer${contador2}`);
   input2.setAttribute("id", `passoModoFazer${contador2}`);
   input2.setAttribute("placeholder", `Passo ${contador2}...`);
-  input2.setAttribute("pattern", "[a-zA-ZÀ-ÿ0-9 ]+");
-  input2.setAttribute("title", "Sem caracteres especias, insira apenas letras, números, espaços e acentos");
   input2.setAttribute("required", "");
   container2.appendChild(input2);
   contador2++;
