@@ -2,8 +2,8 @@
 .titulosForm {
   width: 100%;
   text-align: center;
-  padding: 1rem;
-  margin-top: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
 }
 .principalForm form > fieldset {
   display: flex;
@@ -12,39 +12,37 @@
 }
 .principalForm form > fieldset > label {
   margin-top: 0.5rem;
-}
-.principalForm form > fieldset > label,
-.principalForm form > fieldset > label > input {
+  padding: 0.5rem;
   line-height: 2rem;
+  width: 100%;
+}
+.principalForm form > fieldset > label > input {
+  box-shadow: 0px 0px 5px 0px rgba(100, 100, 100, 0.75);
   padding-left: 0.5rem;
+  border-radius: 5px;
+  line-height: 3rem;
   width: 100%;
 }
 .principalForm form > fieldset > button {
   line-height: 2rem;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 /* ---------------------------- fieldsetInformacoes */
 
-
-
-
-
-
-
-/* ---------------------------- fieldsetInteiro */
-.fieldsetInteiro {
+/* ---------------------------- fieldsetLista */
+.fieldsetLista {
   flex-direction: column;
 }
-.fieldsetInteiro > button {
+.fieldsetLista input {
+  margin-bottom: 10px;
+}
+.fieldsetLista button {
   background-color: #054f77;
   color: #f0f0f0;
-  width: 2rem;
+  padding: 0 1rem;
   margin: 0.5rem auto;
-  border-radius: 50%;
-}
-.fieldsetInteiro > label > input {
-  margin: 0.5rem;
 }
 
 /* ---------------------------- fieldsetBotoes */
@@ -61,7 +59,7 @@
   background-color: #ee7777;
 }
 .botaoSalvar {
-  background-color: #99ee99;
+  background-color: #88ee77;
 }
 
 /* ---------------------------- Mobile */
