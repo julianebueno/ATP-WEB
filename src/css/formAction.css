@@ -1,0 +1,81 @@
+/* ------------------------------- Container Receitas */
+.containerReceitas{
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #D6F1FF77;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(100,100,100,0.75);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+
+/* ------------------------------- Caixa vazia se não tiver receita */
+.caixaVazia{
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ------------------------------- containerInfo */
+.containerInfo{
+  padding: 1rem;
+  width: 100%;  
+  border: solid 1px #054f77;
+  border-radius: 5px;
+}
+.containerInfo > h2 {
+  margin-bottom: 10px;
+}
+.containerInfo > p {
+  margin-top: 5px;
+}
+
+/* ------------------------------- caixaIngrediente  e caixaPasso*/
+.caixaIngrediente,
+.caixaPasso {
+  border: solid 1px #054f77;
+  border-radius: 5px;
+  margin: 1% auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  gap: 5px;
+}
+.caixaIngrediente {
+  width: 34.5%;
+}
+.caixaPasso {
+  width: 64.5%;
+}
+.caixaPasso li {
+  margin-left: 1rem;
+  list-style: decimal;
+}
+.caixaIngrediente h4,
+.caixaPasso h4 {
+  margin-bottom: 10px;
+}
+.itemIngrediente {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.itemIngrediente img{
+  width: 30px;
+}
+
+/* ---------------------------- Mobile */
+
+@media (max-width: 768px) {
+  .containerReceitas {
+    width: 100%;
+    margin: .5rem 0;
+    padding: 1rem;
+  }
+  .caixaIngrediente,
+  .caixaPasso {
+    width: 100%;
+  }
+}
