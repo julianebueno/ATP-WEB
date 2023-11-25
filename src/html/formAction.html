@@ -13,22 +13,39 @@
   <link rel="stylesheet" href="../css/formAction.css">
 
   <!-- JS -->
-  <script type="module" src="../js/controller/construirHeaderFooter.js" defer></script>
-  <script type="module" src="../js/controller/menuHeader.js" defer></script>
-  <script type="text/javascript" src="../js/controller/funcoesFormAction.js" defer></script>
+  <script src="../js/menuHeader.js" defer></script>
+  <script type="text/javascript" src="../js/funcoesFormAction.js" defer></script>
 
   <title>YC - Receitas</title>
 </head>
 
 <body>
 
-  <header id="header" class="cabecalho"></header>
+  <header id="header" class="cabecalho">
+    <div class="containerHeader">
+      <a href="../../index.html"><img src="../img/logo.svg" alt="logo"></a>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li class="close">&times;</li>
+          <li><a href="../../index.html">Inicial</a></li>
+          <li><a href="../html/form.html">Cadastro</a></li>
+          <li><a href="../html/formAction.html">Receitas</a></li>
+          <li><a href="../html/about.html">Sobre</a></li>
+        </ul>
+        <span class="mobile-btn">Menu</span>
+        <div class="overlay"></div>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <h2 class="titulo">Receitas</h2>
     <section class="containerReceitas" id="containerReceitas"></section>
   </main>
 
-  <footer id="footer" class="rodape"></footer>
+  <footer id="footer" class="rodape">
+    <small>Feito por Juliane Bueno</small>
+    <small>&copy; Todos os Direitos Reservados</small>
+  </footer>
 
 </html>

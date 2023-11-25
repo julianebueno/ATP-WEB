@@ -13,15 +13,29 @@
   <link rel="stylesheet" href="../css/inicialESobre.css">
 
   <!-- JS -->
-  <script type="module" src="../js/controller/construirHeaderFooter.js" defer></script>
-  <script type="module" src="../js/controller/menuHeader.js" defer></script>
+  <script src="../js/menuHeader.js" defer></script>
 
   <title>YC - Sobre</title>
 </head>
 
 <body>
 
-  <header id="header" class="cabecalho"></header>
+  <header id="header" class="cabecalho">
+    <div class="containerHeader">
+      <a href="../../index.html"><img src="../img/logo.svg" alt="logo"></a>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li class="close">&times;</li>
+          <li><a href="../../index.html">Inicial</a></li>
+          <li><a href="../html/form.html">Cadastro</a></li>
+          <li><a href="../html/formAction.html">Receitas</a></li>
+          <li><a href="../html/about.html">Sobre</a></li>
+        </ul>
+        <span class="mobile-btn">Menu</span>
+        <div class="overlay"></div>
+      </nav>
+    </div>
+  </header>
 
   <main class="prinicipalAbout">
     <h2 class="titulo">Sobre</h2>
@@ -79,6 +93,9 @@
 
   </main>
 
-  <footer id="footer" class="rodape"></footer>
+  <footer id="footer" class="rodape">
+    <small>Feito por Juliane Bueno</small>
+    <small>&copy; Todos os Direitos Reservados</small>
+  </footer>
 
 </html>

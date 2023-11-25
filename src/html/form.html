@@ -13,16 +13,30 @@
   <link rel="stylesheet" href="../css/form.css">
 
   <!-- JS -->
-  <script type="module" src="../js/controller/construirHeaderFooter.js" defer></script>
-  <script type="module" src="../js/controller/menuHeader.js" defer></script>
-  <script src="../js/controller/funcoesForm.js" defer></script>
+  <script src="../js/menuHeader.js" defer></script>
+  <script src="../js/funcoesForm.js" defer></script>
 
   <title>YC - Cadastro de Receita</title>
 </head>
 
 <body>
 
-  <header id="header" class="cabecalho"></header>
+  <header id="header" class="cabecalho">
+    <div class="containerHeader">
+      <a href="../../index.html"><img src="../img/logo.svg" alt="logo"></a>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li class="close">&times;</li>
+          <li><a href="../../index.html">Inicial</a></li>
+          <li><a href="../html/form.html">Cadastro</a></li>
+          <li><a href="../html/formAction.html">Receitas</a></li>
+          <li><a href="../html/about.html">Sobre</a></li>
+        </ul>
+        <span class="mobile-btn">Menu</span>
+        <div class="overlay"></div>
+      </nav>
+    </div>
+  </header>
 
   <main class="principalForm">
     <h2 class="titulo">Cadastro de Receita</h2>
@@ -48,12 +62,12 @@
         <label for="tempoPreparo">
           Tempo de Preparo
           <small>em minutos</small>
-          <input type="number" name="tempoPreparo" placeholder="Digite aqui..." min="1" value="1" max="1440" required>
+          <input type="number" name="tempoPreparo" id="tempoPreparo" placeholder="Digite aqui..." min="1" value="1" max="1440" required>
         </label>
         <label for="rendimento">
           Rendimento
           <small>em porções</small>
-          <input type="number" name="rendimento" placeholder="Digite aqui..." min="1" value="1" max="1000" required>
+          <input type="number" name="rendimento" id="rendimento" placeholder="Digite aqui..." min="1" value="1" max="1000" required>
         </label>
       </fieldset>
 
@@ -79,10 +93,16 @@
         <button type="button" class="botaoLimpar" onclick="location.reload()">LIMPAR</button>
         <button type="submit" class="botaoSalvar">SALVAR</button>
       </fieldset>
+      <fieldset class="fieldsetBotoes">
+        <button type="button" class="botaoTeste" onclick="preencherValores()">Teste</button>
+      </fieldset>
 
     </form>
   </main>
 
-  <footer id="footer" class="rodape"></footer>
+  <footer id="footer" class="rodape">
+    <small>Feito por Juliane Bueno</small>
+    <small>&copy; Todos os Direitos Reservados</small>
+  </footer>
 
 </html>

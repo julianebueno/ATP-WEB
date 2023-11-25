@@ -39,6 +39,7 @@ body {
   padding: 0 16px;
 }
 
+/* ----------------------------- Menu */
 .menu,
 .menu li {
   display: inline-block;
@@ -82,7 +83,7 @@ body {
     width: 200px;
     height: 100%;
     z-index: 3;
-    transform: translateX(300px);
+    transform: translateX(200px);
     transition: all 200ms ease-in-out;
   }
 
@@ -150,12 +151,6 @@ main {
   width: 100%;
   padding: 1rem;
   border-bottom: solid 1px #054f77;
-}
-
-@media (max-width: 768px) {
-  main {
-    padding: 1.5rem;
-  }
 }
 
 /* ------------------------------------------ Footer */
